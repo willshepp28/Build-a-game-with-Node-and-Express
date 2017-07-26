@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+/*  RESET  */
+html, body, ul, ol, li, form, fieldset, legend
+{
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p { margin-top: 0; }
+
+fieldset,img { border: 0; }
+
+legend { color: #000; }
+
+li { list-style: none; }
+
+sup { vertical-align: text-top; }
+
+sub { vertical-align: text-bottom; }
+
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+caption, th, td
+{
+	text-align: left;
+	vertical-align: top;
+	font-weight: normal;
+}
+
+input, textarea, select
+{
+	font-size: 110%;
+	line-height: 1.1;
+}
+
+abbr, acronym
+{
+	border-bottom: .1em dotted;
+	cursor: help;
+}
+
+
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: geometricPrecision;
+text-rendering: optimizeLegibility;
+
+     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+   -moz-font-feature-settings: "liga" on;
+
+
+}
+
+header {
+    padding: 22px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-nav h1 {
+    font-size: 50px;
+}
+
+
+nav strong {
+
+    font-size: 40px;
+
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 27px;
+}
+
+.display {
+    display: flex;
+    font-size: 100px;
+    margin-bottom: 50px;
+    background: #F6F6F6;
+border-radius: 5px;
+padding: 27px;
+box-shadow: 0 4px 14px 0 rgba(0,0,0,.3);
+
+}
+
+.display div {
+    margin-right: 14px;
+}
+
+.error {
+    background: #ED5A5A;
+    color: #FFFFFF;
+        padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.success {
+        background: lightgreen;
+    color: #FFFFFF;
+        padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.input-error {
+     border: 2px solid #ed5a5a;
+}
+.input form {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.shadow {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.input input {
+    margin-right: 15px;
+     padding: 11px;
+    width: 20vw;
+
+}
+
+.input button {
+    background: #ee0979;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
+    border: none;
+    font-size: 17px;
+    border-radius: 3px;
+    -webkit-box-shadow: 4px 4px 2px #d4d4d4;
+    box-shadow: 4px 4px 2px #d4d4d4;
+      transition: all 0.5s;
+    
+}
+
+.input button:hover {
+    background: #F00000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #DC281E, #F00000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #DC281E, #F00000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ cursor: pointer;
+}
+
+.input button:active {
+  
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+.guess {
+    display: flex;
+    justify-content: center;
+}
+
+.guess span {
+    text-transform: uppercase;
+}

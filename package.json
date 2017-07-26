@@ -1,0 +1,19 @@
+{
+  "name": "buildgame",
+  "version": "1.0.0",
+  "description": "build a game with node and express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.3",
+    "express-validator": "^3.2.1",
+    "session": "^0.1.0"
+  }
+}

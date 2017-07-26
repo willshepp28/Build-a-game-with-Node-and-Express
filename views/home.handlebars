@@ -1,0 +1,69 @@
+<header>
+    <nav>
+        <div class="left-nav">
+            <h1>Mystery Word</h1>
+        </div>
+        <div class="right-nav">You have <strong>{{count}}</strong> guesses left</div>
+    </nav>
+</header>
+
+
+<div class="container">
+
+
+
+{{#if errors}}
+
+ <p class="error">You can only enter one number at a time. Try Again.</p>
+   
+    {{else}}
+
+    {{#if winOrlose}}
+  <p class="success">{{winOrlose}}</p>
+    {{else}}
+    <div class="display">
+        {{#each display}}
+           
+            <div>{{this}}</div>
+        
+       {{/each}}
+    </div>
+    {{/if}}
+{{/if}}
+
+
+    {{!-- {{#if errors}}
+        <p class="error">You can only enter one number at a time. Try Again.</p>
+    {{/if}} --}}
+
+
+
+    <div class="input">
+        <form action="/" method="post">
+
+    
+        {{#if errors}}
+            <input type="text" name="input" class="input-error"><br>
+            {{else}}
+
+            <input type="text" name="input" class="shadow"><br>
+        {{/if}}
+
+
+            <button type="submit"><span>Make a guess<span></button>
+        </form>
+
+        <div class="guess">
+            <h3>Letters guessed: 
+                {{#if userGuess}}
+                    {{#each userGuess}}
+                        <span>{{this}}</span>
+                    {{/each}}
+                {{else}}
+                None
+                {{/if}}
+            </h3>
+        </div>
+    </div>
+
+</div>
